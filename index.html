@@ -1159,5 +1159,14 @@ document.getElementById('enquiry-form').addEventListener('submit', function(e) {
   setTimeout(() => s.style.display = 'none', 6000);
 });
 </script>
+<script>
+    console.log("Website powered by JavaScript for Jeremy Sharpless.");
+    // Simple dynamic footer year update using JS
+    document.addEventListener("DOMContentLoaded", () => {
+        const yearSpan = document.getElementById("year");
+        if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+</script>
+  
 </body>
 </html>
